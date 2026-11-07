@@ -1,0 +1,10 @@
+id = "codesprint"
+name = "CodeSprint"
+description = "Pomodoro focus timer, daily coding goals, streaks and productivity stats for Zed's Agent panel, exposed as an MCP server."
+version = "1.0.0"
+schema_version = 1
+authors = ["CodeSprint Contributors <harshitkishoresingh26@gmail.com>"]
+repository = "https://github.com/harshitsingh205/codesprint-zed"
+
+[context_servers.codesprint]
+name = "CodeSprint"

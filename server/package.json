@@ -1,0 +1,25 @@
+{
+  "name": "codesprint-mcp-server",
+  "version": "1.0.0",
+  "description": "CodeSprint focus timer, daily goals, streaks and stats as a Model Context Protocol server for the Zed editor.",
+  "license": "MIT",
+  "author": "CodeSprint Contributors <harshitkishoresingh26@gmail.com>",
+  "repository": { "type": "git", "url": "git+https://github.com/harshitsingh205/codesprint-zed.git", "directory": "server" },
+  "bugs": { "url": "https://github.com/harshitsingh205/codesprint-zed/issues" },
+  "homepage": "https://github.com/harshitsingh205/codesprint-zed#readme",
+  "keywords": ["zed", "mcp", "model-context-protocol", "pomodoro", "focus", "timer", "productivity"],
+  "bin": { "codesprint-mcp-server": "dist/index.js" },
+  "main": "dist/index.js",
+  "files": ["dist", "README.md", "LICENSE"],
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "tsc -p tsconfig.json && node scripts/run-tests.js",
+    "prepublishOnly": "npm run test && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.0",
+    "typescript": "^5.9.3"
+  }
+}

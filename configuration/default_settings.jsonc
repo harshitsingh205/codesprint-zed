@@ -1,0 +1,10 @@
+{
+  // All values are optional; these are the defaults.
+  "focusMinutes": 25,
+  "shortBreakMinutes": 5,
+  "longBreakMinutes": 15,
+  "sessionsBeforeLongBreak": 4,
+  "dailyGoalMinutes": 120,
+  "notifications": true,
+  "autoBreakSuggestions": true
+}

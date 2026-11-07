@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CodeSprint settings",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "focusMinutes": {
+      "type": "integer", "minimum": 1, "maximum": 180, "default": 25,
+      "description": "Length of a focus session in minutes."
+    },
+    "shortBreakMinutes": {
+      "type": "integer", "minimum": 1, "maximum": 60, "default": 5,
+      "description": "Length of a short break in minutes."
+    },
+    "longBreakMinutes": {
+      "type": "integer", "minimum": 1, "maximum": 120, "default": 15,
+      "description": "Length of a long break in minutes."
+    },
+    "sessionsBeforeLongBreak": {
+      "type": "integer", "minimum": 2, "maximum": 10, "default": 4,
+      "description": "Completed focus sessions before a long break is suggested."
+    },
+    "dailyGoalMinutes": {
+      "type": "integer", "minimum": 5, "maximum": 1440, "default": 120,
+      "description": "Daily focus-time target in minutes."
+    },
+    "notifications": {
+      "type": "boolean", "default": true,
+      "description": "Show a desktop notification when a session finishes."
+    },
+    "autoBreakSuggestions": {
+      "type": "boolean", "default": true,
+      "description": "After a focus session, switch to a break instead of another focus session."
+    }
+  }
+}

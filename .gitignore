@@ -1,0 +1,6 @@
+target/
+*.wasm
+node_modules/
+server/dist/
+server/out/
+.DS_Store
